@@ -1,0 +1,243 @@
+/*navigation bar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(245, 245, 245); /* page background */
+      color: rgb(54, 69, 79); /* text color */
+      font-size: 1rem;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+      background-color: black; /*colour of the top navigation bar */ 
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed; /* keeps nav on top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }  
+    nav a {
+      color: white; /* link's text */
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: rgb(135, 206, 235); /* the link hover color */
+    }
+    .hero {
+      background-color: rgb(135, 206, 235); /* blue section */
+      color: white;
+      text-align: center;
+      padding: 120px 20px 80px;
+      margin-top: 50px; /* space for fixed navigation */
+    }
+    .hero h1 {
+      font-size: 2.5em; /* large heading */
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      background-color: rgb(54, 69, 79);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px; /* giving selection option rounded corners */
+    }
+
+    .hero a:hover {
+      background-color: #333;
+    }
+    header {
+      text-align: center; /* center header content */
+      padding: 20px;
+      margin-top: 50px; /* space for nav */
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      color: rgb(54, 69, 79);
+    }
+
+    .team {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .team-members {
+      display: flex; /* align team horizontally */
+      justify-content: center;
+      flex-wrap: wrap; /* wrap on small screens */
+      flex-direction: row;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em; /* large heading */
+      margin-bottom: 10px;
+    }
+
+    .member {
+      background: white; /* card background */
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.1); /* light shadow */
+    }
+
+    .member img {
+      width: 100%; /* making the images fit card */
+      border-radius: 8px;
+    }
+
+    .member h4 {
+      margin: 10px 0 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      margin-top: 30px;
+    }
+    
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form-group label{
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    form button{
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    form button:hover{
+        background-color: rgb(54, 69, 79);
+    }
+    
+/* ========== TABLET RESPONSIVENESS ========== */
+@media screen  and(max-width: 900px){
+    nav {
+      background-color: black; /* navigation bar */
+      text-align: center;
+      padding: 10px;
+      position: fixed; /* keeps nav on top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0 10px;
+    }
+
+    .team-members{
+        align-items: center;
+        width: 100%;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: rgb(135, 206, 235); /* hover effect */
+    }
+
+    .hero{
+      background-color: rgb(135, 206, 235); 
+      color: white; 
+      text-align: center;
+    }
+}
+/*=========== MOBILE RESPONSIVENESS =========== */
+@media screen and(max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+    nav a{
+        display: block;
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    .hero{
+        padding: 80px 10px 40px;
+    }
+    .hero h1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-members{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container{
+        padding: 15px;
+    }
+    form .form-group{
+        width:100%;
+    }
+}
