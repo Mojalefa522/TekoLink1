@@ -13,8 +13,17 @@ It was created as part of a web development module
 # Author
 - Created by Kabelo Mojalefa (2025)
 # Functinality
+-Responsive design for desktop and mobile
+-Navigation menu linking to home,about,enquiry,services offered,contact information and the team  involved
+-Contact foprm to send messages directly via email
+-Smooth scrolling with subtle animation
+-Readability and colour scheme thats comfortable on the eyes 
+-Added responsive typography
 # Timeline and MileStone
 # ChangeLog
+-Removed the previous version of the navigation bar where each html page had its own navigation bar
+-added a CSS file so that i can place and the navigation bar to all pages for clean looking work
+-implementation of responsive dewsign throughout various devices (computer,tablet and mobiole phone) 
 # references
 1. hero link resources used : https://www.w3schools.com/howto/howto_css_hero_image.asp
 2. Html forms resources used : https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms

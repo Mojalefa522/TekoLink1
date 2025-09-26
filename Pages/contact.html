@@ -21,23 +21,24 @@
     <h1>Contact Us</h1>
     <p>We'd love to hear from you. Reach us through the details below or send us a message.</p>
   </header>
-
+  <div class="container">
   <main>
-    <table class="contact-info">
-      <tr>
-        <td><strong>Telephone:</strong></td>
-        <td>066 550 1596</td>
-      </tr>
-      <tr>
-        <td><strong>Email:</strong></td>
-        <td><a href="mailto:info@TekoLink.co.za">info@TekoLink.co.za</a></td>
-      </tr>
-      <tr>
-        <td><strong>Address:</strong></td>
-        <td>Limpopo, 7 Mokolo Street, Polokwane</td>
-      </tr>
-    </table>
-
+    <section class="contact-info-section">
+  <table class="contact-info">
+    <tr>
+      <td><strong>Telephone:</strong></td>
+      <td>066 550 1596</td>
+    </tr>
+    <tr>
+      <td><strong>Email:</strong></td>
+      <td><a href="mailto:info@TekoLink.co.za">info@TekoLink.co.za</a></td>
+    </tr>
+    <tr>
+      <td><strong>Address:</strong></td>
+      <td>Limpopo, 7 Mokolo Street, Polokwane</td>
+    </tr>
+  </table>
+</section>
     <section class="map-section">
       <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14586.876992333106!2d29.441692542137623!3d-23.93499375671445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d7bd46230cfd%3A0x217ea38af7c6ff80!2s7%20Mokolo%20St%2C%20Penina%20Park%20X1%2C%20Polokwane%2C%200699%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1755778845865!5m2!1sen!2sie" 
@@ -48,29 +49,29 @@
 
     <section>
       <h2>Send Us a Message</h2>
-      <form action="" method="post">
-        <table>
-          <tr>
-            <td><label for="name">Name:</label></td>
-            <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
-          </tr>
-          <tr>
-            <td><label for="message">Message:</label></td>
-            <td><textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><input type="submit" value="Submit"></td>
-          </tr>
-        </table>
-      </form>
-    </section>
-  </main>
+      <form action="" method="post" class="contact-form">
+      <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
 
+      <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+     <div class="form-group full-width">
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+     </div>
+
+      <div class="form-group full-width">
+     <input type="submit" value="Submit">
+     </div>
+     </form>
+     </section>
+  </main>
+  </div>
   <footer>
     <p>&copy; 2025 TekoLink Innovations</p>
   </footer>
